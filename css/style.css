@@ -1,0 +1,75 @@
+html body{
+    font-family: 'Work Sans';
+
+}
+/* header start  */
+header nav .nav-link{
+    color: #fff;
+    font-size: 16px;
+    letter-spacing: .95px;
+}
+header nav .nav-link:hover{
+    color: gold;
+}
+main .card .layout{
+    display: block;
+    background-color: rgba(255, 217, 0, 0.792);
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 110px;
+    display: none;
+    
+}
+main .card:hover .layout {
+    display: block;
+}
+ /* about start  */
+.section-timeline .timeline::before {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    background-color: black;
+    left: 50%;
+    transform: translatex(-50%);
+    
+}
+.section-timeline .timeline .row .events
+ {
+    position: relative;
+    padding: 20px;
+    width: 50%;
+}
+.section-timeline .timeline .row.left {
+    justify-content: flex-start;
+}
+.section-timeline .timeline .row.right {
+    justify-content: flex-end;
+}
+.section-timeline .timeline .row .events::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 20px;
+    height: 20px;
+    background-color: #000;
+    border-radius: 50%;
+    transform: translatex(-50%);
+
+}
+.section-timeline .timeline .row.left .events::before {
+     right: -23px;
+}
+.section-timeline .timeline .row.right .events::before {
+    left: -2px;
+}
+
+
+
+
+
+ /* about end  */
+
+/* header end  */
